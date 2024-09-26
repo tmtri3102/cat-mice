@@ -28,3 +28,8 @@ Cat
 + eatRat(rat): void
 
 */
+let tom = new Cat("Tom", 30, 50);
+let jerry = new Rat("Jerry", 40, 20);
+tom.squeak("chit chit");
+jerry.squeak("meow");
+tom.catchRat(jerry);

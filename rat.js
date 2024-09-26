@@ -2,7 +2,7 @@ class Rat {
 	name;
 	weight;
 	speed;
-	status;
+	isAlive;
 	constructor(name, weight, speed, isAlive) {
 		this.name = name;
 		this.weight = weight;
@@ -14,5 +14,6 @@ class Rat {
 	}
 	isDead() {
 		this.isAlive = false;
+		this.weight = 0;
 	}
 }

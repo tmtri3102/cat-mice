@@ -13,16 +13,14 @@ class Cat {
 	catchRat(rat) {
 		if (this.speed > rat.speed) {
 			this.eatRat(rat);
-		} else {
-			console.log(`${this.name} the cat is catching ${rat.name} the rat!`);
+			return true;
 		}
 	}
 	eatRat(rat) {
-		if (this.rat) {
-			this.rat.isAlive();
-			this.weight += 1;
-		} else {
-			console.log(`${this.name} the cat is eating ${rat.name} the rat!`);
+		if (rat.isAlive) {
+			this.weight += rat.weight;
+			rat.isDead();
+			console.log(`${rat.name} the rat is dead!`);
 		}
 	}
 }
