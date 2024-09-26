@@ -28,18 +28,3 @@ Cat
 + eatRat(rat): void
 
 */
-class Rat {
-	name;
-	weight;
-	speed;
-	status;
-	constructor(name, weight, speed, isAlive) {
-		this.name = name;
-		this.weight = weight;
-		this.speed = speed;
-		this.isAlive = null;
-	}
-	squeak(message) {
-		console.log(message);
-	}
-}
